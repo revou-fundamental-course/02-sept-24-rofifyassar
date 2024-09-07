@@ -1,1 +1,4 @@
 //Ini Javascript
+function hitungLuas(){
+    
+}
