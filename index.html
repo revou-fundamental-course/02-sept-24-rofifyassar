@@ -9,73 +9,86 @@
 
 </head>
 <body>
+    <!-- Ini header -->
     <header class="main-header">
 
         <h1>Welcome to Katik</h1>
         <p>Hai Sobat Selamat Datang di Katik :)</p>
 
     </header>
+
     <main>
         <section class="selection-content">
 
             <button href="#" type="button" class="selection-btn bisque-color">Segitiga</button>
-            <button href="#" type="button" class="selection-btn white-color">Jajar Genjang</button>
+            <button href="#" type="button" class="selection-btn grey-color">Jajar Genjang</button>
 
         </section>
         
         <section class="main-content">
+
+            <!-- Ini Bagian Rumus Luas Segitiga -->
             <aside>
+
+                <!-- Ini Header Rumus Luas Segitiga -->
                 <header class="luas-segitiga-header">
                 <h1>Luas Segitiga</h1>
                 </header>
-    
+
+                <!-- Ini Artikel Luas Segitiga -->
                 <article class="luas-segitiga-content">
-    
                     <div class="luas-segitiga-img"></div>
-                    <p>Rumus Luas Segitiga yaitu :</p>
-                    <p class="bold">L = 1/2 x a x t</p>
-                    <p>
+                    <p class="luassegitiga">Rumus Luas Segitiga</p>
+                    <p class="boldluas">L = 1/2 x a x t</p>
+                    <p class="rumusluas">
                         <br>Dimana :</br>
                         <br>L  =  Luas</br>
                         <br>a  =  Panjang Alas</br>
                         <br>t  =  Tinggi</br>
-                        <br></br>   
+                        <br></br>
                     </p>
-                     
-    
                 </article>
     
+                <!-- Ini Garis Pembatas -->
                 <hr />
     
-                <form>
+                <!-- Ini Form Rumus Luas Segitiga-->
+                <form class="formluas">
                     <header>
                         <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
                     </header>
-                    <div class="input-wrapper">
-                        <label for="panjang-alas">Panjang Alas</label>
-                        <input id="panjang-alas" type="number"/>
+                    <div class="luas-input-wrapper">
+                        <label for="alas">Panjang Alas</label>
+                        <input id="alas" type="number"/>
                     </div>
-                    <div class="input-wrapper">
+                    <div class="luas-input-wrapper">
                         <label for="tinggi">Tinggi</label>
                         <input id="tinggi" type="number"/>
                     </div>
-                        <p id="result">Hasil Perhitungan</p>
-                        <button onclick="hitungLuas">Hitung</button>
-                        <div id="output"></div>
-                        <script src="script.js"></script>''
+                    <div>
+                        <br></br>
+                        <br></br>
+                        <p id="resultluas">Hasil Perhitungan</p>
+                        <button onclick="cekluas()">Hitung</button>
+                        <h3 id="hasilluas"></h3>
+                        <button class="resetluas-btn">Reset</button>
+                    </div>
                 </form>
             </aside>
     
+            <!-- Ini Bagian Rumus Keliling Segitiga  -->
              <aside>
-                <header class="luas-segitiga-header">
+
+                <!-- Ini Header Rumus Keliling Segitiga -->
+                <header class="kel-segitiga-header">
                 <h1>Keliling Segitiga</h1>
                 </header>
     
-                <article class="luas-segitiga-content">
-    
-                    <div class="luas-segitiga-img"></div>
-                    <p>Rumus Keliling Segitiga yaitu :</p>
-                    <p class="bold">
+                <!-- Ini Artikel Rumus Keliling Segitiga -->
+                <article class="kel-segitiga-content">
+                    <div class="kel-segitiga-img"></div>
+                    <p class="kelsegitiga">Rumus Keliling Segitiga</p>
+                    <p class="boldkel">
                         K = S1 + S2 + S3
                     </p>
                     <p>
@@ -85,30 +98,39 @@
                         <br>S2  =  Sisi B</br>
                         <br>S3  =  Sisi C</br>
                     </p>
-    
                 </article>
     
+                <!-- Ini Garis Pembatas -->
                 <hr />
     
-                <form>
+                <!-- Ini Form Rumus Keliling Segitiga -->
+                <form class="formkel">
                     <header>
-                        <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+                        <h1 class="kel-segitiga-form-header">Hitung Luas Segitiga</h1>
                     </header>
-                    <div class="input-wrapper">
-                        <label for="panjang-alas">Panjang Alas</label>
-                        <input id="panjang-alas" type="number"/>
+                    <div class="kel-input-wrapper">
+                        <label for="k1">Sisi K1</label>
+                        <input id="k1" type="number"/>
                     </div>
-                    <div class="input-wrapper">
-                        <label for="tinggi">Tinggi</label>
-                        <input id="tinggi" type="number"/>
+                    <div class="kel-input-wrapper">
+                        <label for="k2">Sisi K2</label>
+                        <input id="k2" type="number"/>
                     </div>
-                        <p id="result">Hasil Perhitungan</p>
+                    <div class="kel-input-wrapper">
+                        <label for="k3">Sisi K3</label>
+                        <input id="k3" type="number"/>
+                    </div>
+                    <div>
+                        <br></br>
+                        <p id="resultkel">Hasil Perhitungan</p>
                         <button>Hitung</button>
-
+                        <h3 id="hasilkel"></h3>
+                        <button type="button" class="resetkel-btn">Reset</button>
+                    </div>
                 </form>
             </aside> 
         </section>
     </main>
-    
+    <script src="js\script.js"></script>
 </body>
 </html>

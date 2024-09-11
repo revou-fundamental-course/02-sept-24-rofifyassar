@@ -1,15 +1,23 @@
 /* Ini CSS */
 .main-header {
+    height: 100px;
+    padding-top: 32px;
+    padding-bottom: 50px;
     text-align: center;
+    color: white;
+    background-color: darkgreen;
 }
 
 .selection-content {
     display: flex;
     flex-direction: column;
+    background-color: chartreuse;
 }
 
 .selection-btn {
-    height: 32px;
+    width: 300px;
+    height: 100px;
+    align-self: center;
     border: none;
     border-radius: 8px;
 }
@@ -26,7 +34,15 @@
     padding-top: 32px;
     padding-bottom: 32px;
     margin: 0px;
+    border: 1px solid;
     text-align: center;
+    background-color: cornflowerblue;
+}
+
+.kel-segitiga-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
     border: 1px solid;
     text-align: center;
     background-color: cornflowerblue;
@@ -35,7 +51,15 @@
 .luas-segitiga-content {
     display: flex;
     flex-direction: column;
+    background-color: chartreuse;
 }
+
+.kel-segitiga-content {
+    display: flex;
+    flex-direction: column;
+    background-color: chartreuse;
+}
+
 .luas-segitiga-img {
     height: 300px;
     width: 300px;
@@ -45,22 +69,126 @@
     align-self: center;
 }
 
-.bold {
+.kel-segitiga-img {
+    height: 300px;
+    width: 300px;
+    background-image: url(https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
+.luassegitiga {
+    height: 29px;
+    width: 167px;
+    background-color: green;
+    background-position: center;
+    align-self: center;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    padding-top: 9px;
+    padding-bottom: 0px;
+}
+
+.kelsegitiga {
+    height: 29px;
+    width: 167px;
+    background-color: green;
+    background-position: center;
+    align-self: center;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    padding-top: 9px;
+    padding-bottom: 0px;
+}
+
+.boldluas {
+    height: 29px;
+    width: 167px;
+    background-color: green;
+    background-position: center;
+    align-self: center;
+    color: white;
     font-weight: bold;
     text-align: center;
+    border: none;
+    border-radius: 8px;
+    padding-top: 9px;
+    padding-bottom: 0px;
 }
+
+.boldkel {
+    height: 29px;
+    width: 167px;
+    background-color: green;
+    background-position: center;
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    padding-top: 9px;
+    padding-bottom: 0px;
+}
+
+.formluas {
+    background-color: chartreuse;
+    height: 45%;
+}
+
+.formkel {
+    background-color: chartreuse;
+    height: 45%;
+}
+
 .luas-segitiga-form-header {
+    height: 25px;
+    width: 200px;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    align-self: center;
     text-align: center;
 }
 
-.input-wrapper {
+.kel-segitiga-form-header {
+    height: 25px;
+    width: 200px;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    align-self: center;
+    text-align: center;
+}
+
+.luas-input-wrapper {
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.input-wrapper>input {
+
+.luas-input-wrapper>input {
     width: 65%;
+}
+
+.kel-input-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.luas-input-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 input[type=number] {
@@ -78,4 +206,12 @@ input[type=number] {
 
 .main-content>aside {
     flex: 1;
+}
+
+.resetluas-btn {
+    border-radius: 8px;
+}
+
+.resetkel-btn {
+    border-radius: 8px;
 }
