@@ -1,4 +1,6 @@
 //Ini Javascript
+
+//Script Mencari Rumus Luas Segitiga
 function cekluas() {
     const alas = parseFloat(document.getElementById('alas').value);
     const tinggi = parseFloat(document.getElementById('tinggi').value);
@@ -7,24 +9,32 @@ function cekluas() {
     document.getElementById('rumusLuas2').innerHTML = `L: 1/2 x ${alas} cm x ${tinggi} cm`;
     document.getElementById('hasilluas').innerHTML = `L: ${luas} cm2`;
 }
-
+//Script Mencari Rumus Keliling Segitiga
 function cekkel() {
-    const k1 = parseFloat(document.getElementById('k1').value);
-    const k2 = parseFloat(document.getElementById('k2').value);
-    const k3 = parseFloat(document.getElementById('k3').value);
-    const keliling = k1 + k2 + k3;
-    document.getElementById('hasilkel').innerHTML = `Keliling: ${keliling}`;
+    const s1 = parseFloat(document.getElementById('s1').value);
+    const s2 = parseFloat(document.getElementById('s2').value);
+    const s3 = parseFloat(document.getElementById('s3').value);
+    const keliling = s1 + s2 + s3;
+    document.getElementById('rumusKel').innerHTML = `K: S1 + S2 + S3`;
+    document.getElementById('rumusKel2').innerHTML = `K: ${s1} cm + ${s2} cm + ${s3} cm`;
+    document.getElementById('hasilkel').innerHTML = `K: ${keliling} cm`;
 }
+
+
 
 document.querySelector('.resetluas-btn').addEventListener('click', function() {
     document.getElementById('alas').value = '';
     document.getElementById('tinggi').value = '';
     document.getElementById('hasilluas').innerHTML = '';
+    document.getElementById('rumusLuas').innerHTML = '';
+    document.getElementById('rumusLuas2').innerHTML = '';
 });
 
 document.querySelector('.resetkel-btn').addEventListener('click', function() {
-    document.getElementById('k1').value = '';
-    document.getElementById('k2').value = '';
-    document.getElementById('k3').value = '';
+    document.getElementById('s1').value = '';
+    document.getElementById('s2').value = '';
+    document.getElementById('s3').value = '';
     document.getElementById('hasilkel').innerHTML = '';
+    document.getElementById('rumusKel').innerHTML = '';
+    document.getElementById('rumusKel2').innerHTML = '';
 });
