@@ -48,6 +48,24 @@
     background-color: cornflowerblue;
 }
 
+.luas-jajargenjang-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+    border: 1px solid;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+.kel-jajargenjang-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+    border: 1px solid;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
 .luas-segitiga-content {
     display: flex;
     flex-direction: column;
@@ -60,7 +78,19 @@
     background-color: chartreuse;
 }
 
-.luas-segitiga-img {
+.luas-jajargenjang-content {
+    display: flex;
+    flex-direction: column;
+    background-color: chartreuse;
+}
+
+.kel-jajargenjang-content {
+    display: flex;
+    flex-direction: column;
+    background-color: chartreuse;
+}
+
+.luas-keliling-segitiga-img {
     height: 300px;
     width: 300px;
     background-image: url(https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
@@ -69,10 +99,10 @@
     align-self: center;
 }
 
-.kel-segitiga-img {
+.luas-keliling-jajargenjang-img {
     height: 300px;
-    width: 300px;
-    background-image: url(https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
+    width: 484px;
+    background-image:  url(https://asset-a.grid.id//crop/0x0:0x0/700x0/photo/2022/02/07/jajar-genjangjpg-20220207114224.jpg);;
     background-size: cover;
     background-position: center;
     align-self: center;
@@ -103,6 +133,20 @@
     border: none;
     border-radius: 8px;
     padding-top: 9px;
+    padding-bottom: 0px;
+}
+
+.jajargenjang {
+    height: 34px;
+    width: 228px;
+    background-color: green;
+    background-position: center;
+    align-self: center;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    padding-top: 14px;
     padding-bottom: 0px;
 }
 
@@ -156,6 +200,16 @@
     text-align: center;
 }
 
+.luas-jajargenjang-form-header {
+    height: 25px;
+    width: 200px;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    align-self: center;
+    text-align: center;
+}
+
 .kel-segitiga-form-header {
     height: 25px;
     width: 200px;
@@ -171,10 +225,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .luas-input-wrapper>input {
     width: 65%;
+}
+
+.error {
+    color: red;
+    display: block;
+    margin-top: 5px;
 }
 
 .kel-input-wrapper {
@@ -200,11 +261,19 @@ input[type=number] {
     box-sizing: border-box;
 }
 
-.main-content {
+.main-content-segitiga{
     display: flex;
 }
 
-.main-content>aside {
+.main-content-segitiga>aside {
+    flex: 1;
+}
+
+.main-content-jajargenjang{
+    display: flex;
+}
+
+.main-content-jajargenjang>aside {
     flex: 1;
 }
 
@@ -216,7 +285,7 @@ input[type=number] {
     border-radius: 8px;
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 100%){
     .main-content {
         flex-direction: column;
     }

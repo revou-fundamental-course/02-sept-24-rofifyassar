@@ -25,7 +25,7 @@
 
         </section>
         
-        <section class="main-content">
+        <section class="main-content-segitiga">
 
             <!-- Ini Bagian Rumus Luas Segitiga -->
             <aside>
@@ -37,7 +37,7 @@
 
                 <!-- Ini Artikel Luas Segitiga -->
                 <article class="luas-segitiga-content">
-                    <div class="luas-segitiga-img"></div>
+                    <div class="luas-keliling-segitiga-img"></div>
                     <p class="luassegitiga">Rumus Luas Segitiga</p>
                     <p class="boldluas">L = 1/2 x a x t</p>
                     <p class="rumusluas">
@@ -88,7 +88,118 @@
     
                 <!-- Ini Artikel Rumus Keliling Segitiga -->
                 <article class="kel-segitiga-content">
-                    <div class="kel-segitiga-img"></div>
+                    <div class="luas-keliling-segitiga-img"></div>
+                    <p class="kelsegitiga">Rumus Keliling Segitiga</p>
+                    <p class="boldkel">
+                        Keliling = S1 + S2 + S3
+                    </p>
+                    <p>
+                        <br>Dimana :</br>
+                        <br>Kel   =  Keliling</br>
+                        <br>S1    =  Sisi A</br>
+                        <br>S2    =  Sisi B</br>
+                        <br>S3    =  Sisi C</br>
+                    </p>
+                </article>
+    
+                <!-- Ini Garis Pembatas -->
+                <hr />
+    
+                <!-- Ini Form Rumus Keliling Segitiga -->
+                <form class="formkel">
+                    <header>
+                        <h1 class="kel-segitiga-form-header">Hitung Keliling Segitiga</h1>
+                    </header>
+                    <div class="kel-input-wrapper">
+                        <label for="s1">Sisi S1</label>
+                        <input id="s1" type="number"/>
+                    </div>
+                    <div class="kel-input-wrapper">
+                        <label for="s2">Sisi S2</label>
+                        <input id="s2" type="number"/>
+                    </div>
+                    <div class="kel-input-wrapper">
+                        <label for="s3">Sisi S3</label>
+                        <input id="s3" type="number"/>
+                    </div>
+                    <div>
+                        <br></br>
+                        <p id="resultkel">Hasil Perhitungan</p>
+                        <button type="button" onclick="cekkel()">Hitung</button>
+                        <h3 id="rumusKel" ></h3>
+                        <h3 id="rumusKel2"></h3>
+                        <h3 id="hasilkel"></h3>
+                        <button type="button" class="resetkel-btn">Reset</button>
+                    </div>
+                </form>
+            </aside> 
+        </section>
+
+
+        <section class="main-content-jajargenjang">
+
+            <!-- Ini Bagian Jajar Genjang -->
+            <aside>
+                <hr />
+                <!-- Ini Header Rumus Jajar Genjang -->
+                <header class="luas-jajargenjang-header">
+                <h1>Luas Jajar Genjang</h1>
+                </header>
+
+                <!-- Ini Artikel Luas Segitiga -->
+                <article class="luas-jajargenjang-content">
+                    <div class="luas-keliling-jajargenjang-img"></div>
+                    <p class="jajargenjang">Rumus Luas Jajar Genjang</p>
+                    <p class="boldluas">L = a x t</p>
+                    <p class="rumusluas">
+                        <br>Dimana :</br>
+                        <br>Luas  =  Luas</br>
+                        <br>a     =  Panjang Alas</br>
+                        <br>t     =  Tinggi</br>
+                        <br></br>
+                    </p>
+                </article>
+    
+                <!-- Ini Garis Pembatas -->
+                <hr />
+    
+                <!-- Ini Form Rumus Luas Jajar Genjang-->
+                <form class="formluas">
+                    <header>
+                        <h1 class="luas-jajargenjang-form-header">Hitung Luas Jajar Genjang</h1>
+                    </header>
+                    <div class="luas-input-wrapper">
+                        <label for="alas">Panjang Alas</label>
+                        <input id="alas" type="number"/>
+                    </div>
+                    <div class="luas-input-wrapper">
+                        <label for="tinggi">Tinggi</label>
+                        <input id="tinggi" type="number"/>
+                    </div>
+                    <div>
+                        <br></br>
+                        <br></br>
+                        <p id="resultluas">Hasil Perhitungan</p>
+                        <button type="button"  onclick="cekluas()">Hitung</button>
+                        <h3 id="rumusLuas"></h3>
+                        <h3 id="rumusLuas2"></h3>
+                        <h3 id="hasilluas"></h3>
+                        <button type="button" class="resetluas-btn">Reset</button>
+                    </div>
+                </form>
+            </aside>
+    
+            <!-- Ini Bagian Rumus Keliling Segitiga  -->
+             <aside>
+                <hr />
+                <!-- Ini Header Rumus Keliling Segitiga -->
+                <header class="kel-segitiga-header">
+                <h1>Keliling Segitiga</h1>
+                </header>
+    
+                <!-- Ini Artikel Rumus Keliling Segitiga -->
+                <article class="kel-segitiga-content">
+                    <div class="luas-keliling-segitiga-img"></div>
                     <p class="kelsegitiga">Rumus Keliling Segitiga</p>
                     <p class="boldkel">
                         Keliling = S1 + S2 + S3

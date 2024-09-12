@@ -2,12 +2,18 @@
 
 //Script Mencari Rumus Luas Segitiga
 function cekluas() {
-    const alas = parseFloat(document.getElementById('alas').value);
-    const tinggi = parseFloat(document.getElementById('tinggi').value);
-    const luas = (alas * tinggi) / 2;
+    let alas = document.getElementById('alas').value;
+    let tinggi = document.getElementById('tinggi').value;
+    let luas = (alas * tinggi) / 2;
     document.getElementById('rumusLuas').innerHTML = `L: 1/2 x a x t`;
     document.getElementById('rumusLuas2').innerHTML = `L: 1/2 x ${alas} cm x ${tinggi} cm`;
     document.getElementById('hasilluas').innerHTML = `L: ${luas} cm2`;
+
+    if (alas == '' || tinggi == '') {
+        alert('Form Masih Kosong');
+    }
+    console.log(alas);
+    console.log(tinggi);
 }
 //Script Mencari Rumus Keliling Segitiga
 function cekkel() {
