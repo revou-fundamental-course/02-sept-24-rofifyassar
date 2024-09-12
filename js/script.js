@@ -121,7 +121,7 @@ function cekkel2() {
     // Perbarui elemen HTML dengan hasil
     document.getElementById('rumuskeljajargenjang').innerHTML = `L: a x t`;
     document.getElementById('rumuskeljajargenjang2').innerHTML = `L: ${a} cm x ${b} cm`;
-    document.getElementById('hasilkel2').innerHTML = `L: ${kelilingj} cm2`;
+    document.getElementById('hasilkel2').innerHTML = `L: ${kelilingj} cm`;
 
     // Debugging: tampilkan nilai di konsol
     console.log(alasj);
