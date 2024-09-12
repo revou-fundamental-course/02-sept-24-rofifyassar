@@ -1,4 +1,5 @@
 /* Ini CSS */
+/* Main Header */
 .main-header {
     height: 100px;
     padding-top: 32px;
@@ -7,13 +8,13 @@
     color: white;
     background-color: darkgreen;
 }
-
+/* Konten Selection */
 .selection-content {
     display: flex;
     flex-direction: column;
     background-color: chartreuse;
 }
-
+/* Konten Button */
 .selection-btn {
     width: 300px;
     height: 100px;
@@ -21,15 +22,15 @@
     border: none;
     border-radius: 8px;
 }
-
+/* Warna Bisque */
 .bisque-color {
     background-color: bisque;
 }
-
+/* Warna Putih */
 .white-color {
     background-color: white;
 }
-
+/* Header Luas Segitiga */
 .luas-segitiga-header {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -38,7 +39,7 @@
     text-align: center;
     background-color: cornflowerblue;
 }
-
+/* Header Keliling Segitiga */
 .kel-segitiga-header {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -47,7 +48,7 @@
     text-align: center;
     background-color: cornflowerblue;
 }
-
+/* Header Luas Jajar Genjang */
 .luas-jajargenjang-header {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -56,7 +57,7 @@
     text-align: center;
     background-color: cornflowerblue;
 }
-
+/* Header Keliling Jajar Genjang */
 .kel-jajargenjang-header {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -65,49 +66,51 @@
     text-align: center;
     background-color: cornflowerblue;
 }
-
+/* Konten Luas Segitiga */
 .luas-segitiga-content {
     display: flex;
     flex-direction: column;
     background-color: chartreuse;
 }
-
+/* Konten Keliling Segitiga */
 .kel-segitiga-content {
     display: flex;
     flex-direction: column;
     background-color: chartreuse;
 }
-
+/* Konten Luas Jajar Genjang */
 .luas-jajargenjang-content {
     display: flex;
     flex-direction: column;
     background-color: chartreuse;
 }
-
+/* Konten Keliling Jajar Genjang */
 .kel-jajargenjang-content {
     display: flex;
     flex-direction: column;
     background-color: chartreuse;
 }
-
+/* Gambar Luas & Keliling Segitiga */
 .luas-keliling-segitiga-img {
     height: 300px;
     width: 300px;
-    background-image: url(https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
+    background-image: url("/assets/luas-&-keliling-segitiga.png");
     background-size: cover;
     background-position: center;
     align-self: center;
+    display: flex;
 }
-
+/* Gambar Luas & Keliling Jajar Genjang */
 .luas-keliling-jajargenjang-img {
     height: 300px;
     width: 484px;
-    background-image:  url(https://asset-a.grid.id//crop/0x0:0x0/700x0/photo/2022/02/07/jajar-genjangjpg-20220207114224.jpg);;
+    background-image:  url("/assets/luas-&-keliling-jajargenjang.jpg");
     background-size: cover;
     background-position: center;
     align-self: center;
+    display: flex;
 }
-
+/* Luas Segitiga */
 .luassegitiga {
     height: 29px;
     width: 167px;
@@ -121,7 +124,7 @@
     padding-top: 9px;
     padding-bottom: 0px;
 }
-
+/* Keliling Segitiga */
 .kelsegitiga {
     height: 29px;
     width: 167px;
@@ -135,7 +138,7 @@
     padding-top: 9px;
     padding-bottom: 0px;
 }
-
+/* Jajar Genjang */
 .jajargenjang {
     height: 34px;
     width: 228px;
@@ -149,7 +152,7 @@
     padding-top: 14px;
     padding-bottom: 0px;
 }
-
+/* Boldluas */
 .boldluas {
     height: 29px;
     width: 167px;
@@ -164,7 +167,7 @@
     padding-top: 9px;
     padding-bottom: 0px;
 }
-
+/* Boldkel */
 .boldkel {
     height: 29px;
     width: 167px;
@@ -179,29 +182,19 @@
     padding-top: 9px;
     padding-bottom: 0px;
 }
-
+/* Form Luas */
 .formluas {
     background-color: chartreuse;
     height: 45%;
 }
-
+/* Form Keliling */
 .formkel {
     background-color: chartreuse;
     height: 45%;
 }
-
+/* Form Header Luas Segitiga */
 .luas-segitiga-form-header {
     height: 25px;
-    width: 200px;
-    background-color: green;
-    color: white;
-    border-radius: 8px;
-    align-self: center;
-    text-align: center;
-}
-
-.luas-jajargenjang-form-header {
-    height: 26px;
     width: 300px;
     background-color: green;
     color: white;
@@ -209,17 +202,37 @@
     align-self: center;
     text-align: center;
 }
-
-.kel-segitiga-form-header {
+/* Form Header Luas Jajar Genjang */
+.luas-jajargenjang-form-header {
     height: 25px;
-    width: 200px;
+    width: 300px;
     background-color: green;
     color: white;
     border-radius: 8px;
     align-self: center;
     text-align: center;
 }
-
+/* Form Header Keliling Segitiga */
+.kel-segitiga-form-header {
+    height: 25px;
+    width: 300px;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    align-self: center;
+    text-align: center;
+}
+/* Form Header Keliling Jajar Genjang */
+.kel-jajargenjang-form-header {
+    height: 25px;
+    width: 300px;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    align-self: center;
+    text-align: center;
+}
+/* Luas Input Wrapper */
 .luas-input-wrapper {
     width: 50%;
     display: flex;
@@ -227,31 +240,17 @@
     align-items: center;
     margin-bottom: 10px;
 }
-
 .luas-input-wrapper>input {
     width: 65%;
 }
-
-.error {
-    color: red;
-    display: block;
-    margin-top: 5px;
-}
-
+/* Keliling Input Wrapper */
 .kel-input-wrapper {
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.luas-input-wrapper {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
+/* Input */
 input[type=number] {
     padding: 12px 20px;
     margin: 8px 0;
@@ -260,33 +259,61 @@ input[type=number] {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
-.main-content-segitiga{
+/* Main Content Segitiga*/
+.main-content-segitiga {
     display: flex;
 }
-
 .main-content-segitiga>aside {
     flex: 1;
 }
-
+/* Main Content Jajar Genjang */
 .main-content-jajargenjang{
     display: flex;
 }
-
 .main-content-jajargenjang>aside {
     flex: 1;
 }
-
+/* Button Resetluas */
 .resetluas-btn {
     border-radius: 8px;
 }
-
+/* Button Resetkel*/
 .resetkel-btn {
     border-radius: 8px;
 }
+/* Media Screen */
+@media only screen and (max-width: 768px) {
+    .main-header {
+        padding-top: 16px;
+        padding-bottom: 25px;
+        height: auto;
+    }
 
-@media only screen and (max-width: 100%){
-    .main-content {
+    .selection-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .luas-keliling-segitiga-img {
+        width: 300px;
+        height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .luas-keliling-jajargenjang-img {
+        width: 300px;
+        height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .main-content-segitiga,
+    .main-content-jajargenjang {
         flex-direction: column;
+    }
+
+    .luas-input-wrapper,
+    .kel-input-wrapper {
+        width: 90%;
     }
 }

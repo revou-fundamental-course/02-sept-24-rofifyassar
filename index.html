@@ -5,27 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Ini link CSS -->
+    <link rel="stylesheet" href="css\styles.css">
 
 </head>
 <body>
     <!-- Ini header -->
     <header class="main-header">
 
-        <h1>Welcome to Katik</h1>
-        <p>Hai Sobat Selamat Datang di Katik :)</p>
+        <h1>Welcome to My Website</h1>
+        <p>Silahkan Mencoba Project Website yang Saya Buat</p>
+        <p>Kalian juga Bisa Menekan Button di Bawah Ini untuk Mengarahkan pada Bagian Segitiga atau Jajar Genjang</p>
 
     </header>
 
     <main>
         <section class="selection-content">
 
-            <button href="#" type="button" class="selection-btn bisque-color">Segitiga</button>
-            <button href="#" type="button" class="selection-btn grey-color">Jajar Genjang</button>
+            <button href="#" type="button" class="selection-btn bisque-color" onclick="scrollToSection('segitiga')">Segitiga</button>
+            <button href="#" type="button" class="selection-btn grey-color" onclick="scrollToSection('jajargenjang')">Jajar Genjang</button>
 
         </section>
         
-        <section class="main-content-segitiga">
+        <section id="segitiga" class="main-content-segitiga">
 
             <!-- Ini Bagian Rumus Luas Segitiga -->
             <aside>
@@ -59,15 +61,16 @@
                     </header>
                     <div class="luas-input-wrapper">
                         <label for="alas">Panjang Alas</label>
-                        <input id="alas" type="number"/>
+                        <input id="alas" type="number" placeholder="Masukkan Alas"/>
                     </div>
                     <div class="luas-input-wrapper">
                         <label for="tinggi">Tinggi</label>
-                        <input id="tinggi" type="number"/>
+                        <input id="tinggi" type="number" placeholder="Masukkan Tinggi"/>
                     </div>
                     <div>
                         <br></br>
                         <br></br>
+                        <!-- Input Perhitungan Luas Segitiga -->
                         <p id="resultluas">Hasil Perhitungan</p>
                         <button type="button"  onclick="cekluas()">Hitung</button>
                         <h3 id="rumusluas"></h3>
@@ -108,22 +111,23 @@
                 <!-- Ini Form Rumus Keliling Segitiga -->
                 <form class="formkel">
                     <header>
-                        <h1 class="kel-segitiga-form-header">Hitung Keliling Segitiga</h1>
+                        <h1 class="kel-jajargenjang-form-header">Hitung Keliling Segitiga</h1>
                     </header>
                     <div class="kel-input-wrapper">
                         <label for="s1">Sisi S1</label>
-                        <input id="s1" type="number"/>
+                        <input id="s1" type="number" placeholder="Masukkan Sisi1"/>
                     </div>
                     <div class="kel-input-wrapper">
                         <label for="s2">Sisi S2</label>
-                        <input id="s2" type="number"/>
+                        <input id="s2" type="number" placeholder="Masukkan Sisi2"/>
                     </div>
                     <div class="kel-input-wrapper">
                         <label for="s3">Sisi S3</label>
-                        <input id="s3" type="number"/>
+                        <input id="s3" type="number" placeholder="Masukkan Sisi3"/>
                     </div>
                     <div>
                         <br></br>
+                        <!-- Input Perhitungan Keliling Segitiga -->
                         <p id="resultkel">Hasil Perhitungan</p>
                         <button type="button" onclick="cekkel()">Hitung</button>
                         <h3 id="rumuskel" ></h3>
@@ -136,7 +140,7 @@
         </section>
 
 
-        <section class="main-content-jajargenjang">
+        <section id="jajargenjang" class="main-content-jajargenjang">
 
             <!-- Ini Bagian Jajar Genjang -->
             <aside>
@@ -171,15 +175,16 @@
                 
                     <div class="luas-input-wrapper">
                         <label for="alasj">Panjang Alas</label>
-                        <input id="alasj" type="number"/>
+                        <input id="alasj" type="number" placeholder="Masukkan Alas"/>
                     </div>
                     <div class="luas-input-wrapper">
                         <label for="tinggij">Tinggi</label>
-                        <input id="tinggij" type="number"/>
+                        <input id="tinggij" type="number" placeholder="Masukkan Tinggi"/>
                     </div>
                     <div>
                         <br></br>
                         <br></br>
+                        <!-- Input Perhitungan Luas Jajar Genjang -->
                         <p id="resultluas">Hasil Perhitungan</p>
                         <button type="button"  onclick="cekluas2()">Hitung</button>
                         <h3 id="rumusluasjajargenjang"></h3>
@@ -224,11 +229,11 @@
                     </header>
                     <div class="kel-input-wrapper">
                         <label for="a">Sisi A</label>
-                        <input id="a" type="number"/>
+                        <input id="a" type="number" placeholder="Masukkan Sisi A"/>
                     </div>
                     <div class="kel-input-wrapper">
                         <label for="b">Sisi B</label>
-                        <input id="b" type="number"/>
+                        <input id="b" type="number" placeholder="Masukkan Sisi B"/>
                     </div>
                     <div>
                         <br></br>
@@ -237,6 +242,7 @@
 
                     <div>
                         <br></br>
+                        <!-- Input Perhitungan Keliling Jajar Genjang -->
                         <p id="resultkel">Hasil Perhitungan</p>
                         <button type="button" onclick="cekkel2()">Hitung</button>
                         <h3 id="rumuskeljajargenjang" ></h3>
@@ -249,6 +255,7 @@
             </aside> 
         </section>
     </main>
+    <!-- Ini Source Script Javascript -->
     <script src="js\script.js"></script>
 </body>
 </html>
