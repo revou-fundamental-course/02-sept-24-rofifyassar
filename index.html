@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
@@ -70,8 +70,8 @@
                         <br></br>
                         <p id="resultluas">Hasil Perhitungan</p>
                         <button type="button"  onclick="cekluas()">Hitung</button>
-                        <h3 id="rumusLuas"></h3>
-                        <h3 id="rumusLuas2"></h3>
+                        <h3 id="rumusluas"></h3>
+                        <h3 id="rumusluas2"></h3>
                         <h3 id="hasilluas"></h3>
                         <button type="button" class="resetluas-btn">Reset</button>
                     </div>
@@ -126,8 +126,8 @@
                         <br></br>
                         <p id="resultkel">Hasil Perhitungan</p>
                         <button type="button" onclick="cekkel()">Hitung</button>
-                        <h3 id="rumusKel" ></h3>
-                        <h3 id="rumusKel2"></h3>
+                        <h3 id="rumuskel" ></h3>
+                        <h3 id="rumuskel2"></h3>
                         <h3 id="hasilkel"></h3>
                         <button type="button" class="resetkel-btn">Reset</button>
                     </div>
@@ -168,24 +168,24 @@
                     <header>
                         <h1 class="luas-jajargenjang-form-header">Hitung Luas Jajar Genjang</h1>
                     </header>
-                <body>
+                
                     <div class="luas-input-wrapper">
-                        <label for="alas">Panjang Alas</label>
-                        <input id="alas" type="number"/>
+                        <label for="alasj">Panjang Alas</label>
+                        <input id="alasj" type="number"/>
                     </div>
                     <div class="luas-input-wrapper">
-                        <label for="tinggi">Tinggi</label>
-                        <input id="tinggi" type="number"/>
+                        <label for="tinggij">Tinggi</label>
+                        <input id="tinggij" type="number"/>
                     </div>
                     <div>
                         <br></br>
                         <br></br>
                         <p id="resultluas">Hasil Perhitungan</p>
-                        <button type="button"  onclick="cekluas()">Hitung</button>
-                        <h3 id="rumusLuasjajargenjang"></h3>
-                        <h3 id="rumusLuasjajargenjang2"></h3>
+                        <button type="button"  onclick="cekluas2()">Hitung</button>
+                        <h3 id="rumusluasjajargenjang"></h3>
+                        <h3 id="rumusluasjajargenjang2"></h3>
                         <h3 id="hasilluas2"></h3>
-                        <button type="button" class="resetluas-btn">Reset</button>
+                        <button type="button" class="resetluas2-btn">Reset</button>
                     </div>
                 </form>
             </aside>
@@ -203,13 +203,14 @@
                     <div class="luas-keliling-jajargenjang-img"></div>
                     <p class="jajargenjang">Rumus Keliling Jajar Genjang</p>
                     <p class="boldkel">
-                        Keliling = 2 X (A + B)
+                        Keliling = 2 x (a + b)
                     </p>
                     <p>
                         <br>Dimana :</br>
                         <br>Kel   =  Keliling</br>
-                        <br>A    =  Sisi A</br>
-                        <br>B    =  Sisi B</br>
+                        <br>a    =  Sisi A</br>
+                        <br>b    =  Sisi B</br>
+                        <br></br>
                     </p>
                 </article>
     
@@ -219,7 +220,7 @@
                 <!-- Ini Form Rumus Keliling Jajar Genjang -->
                 <form class="formkel">
                     <header>
-                        <h1 class="kel-segitiga-form-header">Hitung Keliling Segitiga</h1>
+                        <h1 class="kel-segitiga-form-header">Hitung Keliling Jajar Genjang</h1>
                     </header>
                     <div class="kel-input-wrapper">
                         <label for="a">Sisi A</label>
@@ -229,15 +230,19 @@
                         <label for="b">Sisi B</label>
                         <input id="b" type="number"/>
                     </div>
+                    <div>
+                        <br></br>
+                        <br></br>
+                    </div>
 
                     <div>
                         <br></br>
                         <p id="resultkel">Hasil Perhitungan</p>
-                        <button type="button" onclick="cekkel()">Hitung</button>
-                        <h3 id="rumusKel" ></h3>
-                        <h3 id="rumusKel2"></h3>
-                        <h3 id="hasilkel"></h3>
-                        <button type="button" class="resetkel-btn">Reset</button>
+                        <button type="button" onclick="cekkel2()">Hitung</button>
+                        <h3 id="rumuskeljajargenjang" ></h3>
+                        <h3 id="rumuskeljajargenjang2"></h3>
+                        <h3 id="hasilkel2"></h3>
+                        <button type="button" class="resetkel2-btn">Reset</button>
                     </div>
                 </form>
                 <hr />
